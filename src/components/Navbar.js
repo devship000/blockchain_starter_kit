@@ -6,8 +6,7 @@ export default function Navbar(props) {
         <nav className="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
         <a
           className="navbar-brand col-sm-3 col-md-2 mr-0"
-          href="#"
-          target="_blank"
+          href='/#'
           rel="noopener noreferrer"
         >
           BLOCKCHAIN
@@ -19,7 +18,7 @@ export default function Navbar(props) {
             </small>
             {
                 props.account
-                ? <img className="ml-2" width={30} height={30} src={`data:image/png;base64, ${new Identicon(props.account, 30).toString()}`} />
+                ? <img alt="addressImage" className="ml-2" width={30} height={30} src={`data:image/png;base64, ${new Identicon(props.account, 30).toString()}`} />
                 : <span></span>
             }
           </li>

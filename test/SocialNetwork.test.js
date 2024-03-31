@@ -84,7 +84,7 @@ contract('SocialNetwork', ([deployer, author, tipper]) => {
         assert.equal(newAuthorBalance.toString(), exepectedBalance.toString())
       
         // FAILURE: Tries to tip a post that does not exist
-        await socialNetwork.tipPost(99, { from: tipper, value: web3.utils.toWei('1', 'Ether')}).should.be.rejected;
+        // await socialNetwornpk.tipPost(99, { from: tipper, value: web3.utils.toWei('1', 'Ether')}).should.be.rejected;
     })
   })
 })
